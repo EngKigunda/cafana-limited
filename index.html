@@ -390,7 +390,7 @@
                         <div class="contact-icon">📧</div>
                         <div>
                             <strong>Email</strong>
-                            <p>info@cafanalimited.co.ke</p>
+                            <p>info@cafana.co.ke</p>
                         </div>
                     </div>
                     <div class="contact-item" id="contact-agpo">
@@ -409,23 +409,24 @@
                     </div>
                 </div>
 
-                <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/xbjnzprl" method="POST">
                     <h3>Send Us a Message</h3>
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Your name" required />
+                        <input type="text" id="name" name="name" placeholder="Your name" required />
                     </div>
                     <div class="form-group">
                         <label for="org">Organisation</label>
-                        <input type="text" id="org" placeholder="Your organisation or county department" />
+                        <input type="text" id="org" name="organization"
+                            placeholder="Your organisation or county department" />
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="your@email.com" required />
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required />
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <select id="subject">
+                        <select id="subject" name="subject">
                             <option value="">Select enquiry type…</option>
                             <option>General Supplies Tender</option>
                             <option>AI Procurement Partnership</option>
@@ -436,7 +437,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" rows="4" placeholder="Tell us about your supply needs…"
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your supply needs…"
                             required></textarea>
                     </div>
                     <button type="submit" class="btn-primary full-width" id="submit-btn">Send Message →</button>
